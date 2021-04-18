@@ -15,3 +15,11 @@ document.addEventListener("keydown", function(e) {
     moveDodgerLeft();
   }
 });
+function moveDodgerRight() {
+  let rightNumbers = dodger.style.right.replace("px", "");
+  let right = parseInt(leftNumbers, 10);
+ 
+  if (right > 0) {
+    dodger.style.left = `${left - 1}px`;
+  }
+};
